@@ -1,0 +1,4 @@
+Sertac Yazgi {syazgi@utexas.edu}
+Sertac Yazgi {phd}
+Sertac Yazgi My interests include {swimming, bicycling and science}
+Sertac Yazgi I am committed to me and my team members learning Python

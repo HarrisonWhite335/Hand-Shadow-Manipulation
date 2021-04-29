@@ -1,24 +1,41 @@
-Pyrates Final Project
+# Pyrates Final Project
 
-Please download all the files in this directory and download the dataset from https://www.kaggle.com/grassknoted/asl-alphabet. Place the two folders inside the
-input directory. Please consult the file tree .png's for further questions on the directories. 
+# American Sign Language Detection using PyTorch
 
-___IF YOU WANT TO TRAIN ON YOUR COMPUTER PLEASE HAVE THE FOLLOWING PACKAGES INSTALLED___
+This project will allow you to recognize American Sign Language letters from static images and real time video. American Sign Language data is obtained from Kaggle. In order to
+train your model you should download it from https://www.kaggle.com/grassknoted/asl-alphabet.
 
-Pytorch
-Imulits – to get proper image paths
-Albumentations 
-cv2 – to read and preprocess images
-OpenCV
-Numpy
-Pandas
-matplotlib
+Dataset consists of 26 letters from American Sign Language and space, delete and nothing classes. There is a total of 87,000 training images - 3,000 images from each class. The
+image resolution is 200x200 pixels.
 
-___TO TRAIN RUN THE FOLLOWING FILES IN THE FOLLOWING STEPS (paranthesis describes what they do)___
+In order to run the program, please download all python files in this directory. Place dataset from Kaggle and python files inside the same input directory. Please consult 
+to the file tree .png's for further questions on the directories. 
 
-preprocess.py (Read, resize (224x224 pixels) and save the images)
-create_csv.py (Maps image paths to the target classes, writes data into a data frame and save as a CSV file, creates binarized labels lb.pkl)
-cnn_models.py (Creates our convolutional neural network)
-train.py (Train the network using a computation device (GPU or CPU), Calculate and plot epoch’s loss and accuracy)
-test.py (Test static images)
-cam_test.py (Test sign language recognition in Real-Time from Webcam Feed)
+The model is already trained in our computer and corresponding model (model.pth), binarized labels (lb.pkl) and data file (data.csv) can be found in output file. If you want to use already trained model you can skip to Step 5.
+
+___IF YOU WANT TO TRAIN ON YOUR COMPUTER___
+
+1. Run preprocess_image.py to read, resize and save images.
+Can be also run from the terminal python preprocess_image.py --num-images 1200
+You can change the number of images that will be selected for the model by changing the last number.
+
+2. Run create_csv.py file to convert images to map the image paths to the target classes.
+First column corresponds to the image_path and second column corresponds to the label between 0-28 associated with each image.
+This code will create data.csv.
+
+3. Run cnn_models.py
+Creates convolutional neural network with four 2D convolutional layers.
+
+4. Run train.py to train the data
+Train the dataset and then validate using 15% of the data. This step will give you model.pth, accuracy and loss plots.
+You can run it from the terminal by python train.py --epochs 10
+You can change the last number to train with less epochs. This will decrease the training time.
+
+___IF YOU WANT TO USE ALREADY TRAINED MODEL___
+
+5. Run test.py to test static hand images.
+
+6. Run cam_test_original.py to test American Sign Language letter in real time.
+
+7. Run cam_test_modified.py to test emojis (Longhorn, Thumbs Up, Thumbs Down, I Love You, OK and Peace) trained using the same dataset.
+

@@ -14,7 +14,7 @@ to the file tree .png's for further questions on the directories.
 The model is already trained in our computer and corresponding model (model.pth), binarized labels (lb.pkl) and data file (data.csv) can be found in the github repository. If you want to use already trained model you can skip to Step 5.
 
 The project uses pytorch, imutils, albumentations, opencv, pandas, numpy and matplotlib libraries. In order to run the codes aforementioned libraries should be installed.
-- To install Pytorch: conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch (Refer to https://pytorch.org/ for other MacOS and Linux)
+- To install Pytorch: conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch (Refer to https://pytorch.org/ for MacOS and Linux)
 - To install imultis: pip install imutils (https://pypi.org/project/imutils/)
 - To install opencv: pip install opencv-python (https://pypi.org/project/opencv-python/)
 - To install numpy: pip install numpy (https://numpy.org/install/)

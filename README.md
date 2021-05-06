@@ -53,5 +53,5 @@ correct hand sign for the letters. This step requires a knowledge of American Si
 
 7. Run cam_test_modified.py to test emojis (Longhorn, Thumbs Up, Thumbs Down, I Love You, OK and Peace) trained using the same dataset.
 Test the code by doing the aferomentioned emojis. 
-I love you sign is a special type of hand language. Please check the wki article to understand this sign: https://en.wikipedia.org/wiki/ILY_sign
+I love you sign is a special type of hand language. Please check the wiki article to understand this sign: https://en.wikipedia.org/wiki/ILY_sign
 

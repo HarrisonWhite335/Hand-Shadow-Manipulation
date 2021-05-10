@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 25 21:32:59 2021
 
-@author: Sertaç
-"""
-
-'''
-USAGE:
-python preprocess_image.py --num-images 1200
-'''
 import os
 import cv2
 import random

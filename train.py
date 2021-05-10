@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 25 23:20:39 2021
 
-@author: Sertaç
-"""
-
-'''
-USAGE:
-python train.py --epochs 10
-'''
 import pandas as pd
 import joblib
 import numpy as np

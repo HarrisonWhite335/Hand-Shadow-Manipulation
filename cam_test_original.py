@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 26 00:44:38 2021
 
-@author: Sertaç
-"""
-
-'''
-USAGE:
-python cam_test.py 
-'''
 import torch
 import joblib
 import torch.nn as nn

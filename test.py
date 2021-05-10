@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 26 00:40:28 2021
 
-@author: Sertaç
-"""
-
-'''
-USAGE:
-python test.py --img A_test.jpg
-'''
 import torch
 import joblib
 import torch.nn as nn

@@ -1,4 +1,3 @@
-# Pyrates Final Project
 
 # American Sign Language Detection using PyTorch
 

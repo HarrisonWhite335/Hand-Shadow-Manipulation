@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 25 22:52:53 2021
 
-@author: Sertaç
-"""
 
 import torch.nn as nn
 import torch.nn.functional as F

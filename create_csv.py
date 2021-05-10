@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 25 22:38:55 2021
 
-@author: Sertaç
-"""
-
-'''
-USAGE:
-python create_csv.py
-'''
 import pandas as pd
 import numpy as np
 import os
